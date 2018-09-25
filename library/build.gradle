@@ -22,8 +22,11 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.github.dcendents.android-maven'
 
 apply from: rootProject.file('common.gradle')
+
+group = 'com.github.docdoc'
 
 android {
     compileSdkVersion targetSdkVersion
@@ -79,10 +82,6 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_7
         targetCompatibility JavaVersion.VERSION_1_7
     }
-}
-
-repositories {
-    maven { url "http://artifactory.yandex.net/jcenter" }
 }
 
 dependencies {

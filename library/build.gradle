@@ -84,9 +84,9 @@ android {
     }
 }
 
-repositories {
-    maven { url "http://artifactory.yandex.net/jcenter" }
-}
+//repositories {
+//    maven { url "http://artifactory.yandex.net/jcenter" }
+//}
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')

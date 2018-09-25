@@ -20,6 +20,7 @@ dependencies {
     implementation 'com.github.DocDoc-team:yandex-checkout-android-sdk
 }
 ```
+Все возможные версии для подключения можно смотреть на [jitpack.io](https://jitpack.io/#DocDoc-team/yandex-checkout-android-sdk)
 
 ## ProGuard
 Добавьте следующие значения в ваш файл `proguard-rules.pro`

@@ -22,35 +22,20 @@
 package ru.yandex.money.android.sdk.impl.contract
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.support.v4.app.Fragment
 import android.support.v4.content.ContextCompat
-import android.text.Editable
-import android.text.TextUtils
-import android.text.TextWatcher
+import android.text.*
+import android.text.style.ForegroundColorSpan
+import android.text.style.StyleSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.EditorInfo
-import kotlinx.android.synthetic.main.ym_fragment_contract.additionalInfoInputViewContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.allowRecurringPaymentsContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.allowWalletLinking
-import kotlinx.android.synthetic.main.ym_fragment_contract.allowWalletLinkingContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.contentView
-import kotlinx.android.synthetic.main.ym_fragment_contract.errorView
-import kotlinx.android.synthetic.main.ym_fragment_contract.loadingView
-import kotlinx.android.synthetic.main.ym_fragment_contract.nextButton
-import kotlinx.android.synthetic.main.ym_fragment_contract.paymentAuth
-import kotlinx.android.synthetic.main.ym_fragment_contract.paymentAuthLoading
-import kotlinx.android.synthetic.main.ym_fragment_contract.phoneInput
-import kotlinx.android.synthetic.main.ym_fragment_contract.phoneInputContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.rootContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.subtitle
-import kotlinx.android.synthetic.main.ym_fragment_contract.sum
-import kotlinx.android.synthetic.main.ym_fragment_contract.switchesAndPaymentAuthContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.switchesContainer
-import kotlinx.android.synthetic.main.ym_fragment_contract.title
+import kotlinx.android.synthetic.main.ym_fragment_contract.*
 import kotlinx.android.synthetic.main.ym_item_common.*
+import ru.yandex.money.android.sdk.BuildConfig
 import ru.yandex.money.android.sdk.R
 import ru.yandex.money.android.sdk.SbolSmsInvoicingInfo
 import ru.yandex.money.android.sdk.impl.AppModel
@@ -274,6 +259,23 @@ internal class ContractFragment : Fragment() {
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
             }
         })
+
+        offerText.text = SpannableStringBuilder().also {
+            it.append(getString(R.string.dd_offer_text_part1))
+            it.append(" ")
+            val len = it.length
+            it.append(getString(R.string.dd_offer_text_part2))
+            it.setSpan(
+                    ForegroundColorSpan(ContextCompat.getColor(context!!, R.color.ym_button_text_link)),
+                    len,
+                    it.length,
+                    0
+            )
+        }
+
+        offerText.setOnClickListener {
+            it.context.startActivity(Intent(Intent.ACTION_VIEW).setData(Uri.parse(BuildConfig.DOCDOC_OFFER_LINK)))
+        }
 
         AppModel.listeners += showContractProgress
         AppModel.listeners += showContract

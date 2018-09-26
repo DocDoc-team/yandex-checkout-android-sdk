@@ -76,6 +76,10 @@
     <string name="ym_retry">Try again</string>
     <string name="ym_no_wallet_dialog_message">%1$s, you do not have a Yandex.Money Wallet</string>
     <string name="ym_no_wallet_dialog_shoose_payment_option">Select payment method</string>
+
+    <string name="dd_offer_text_part1">Нажимая \"Продолжить\" вы соглашаетесь с </string>
+    <string name="dd_offer_text_part2">офертой</string>
+
     <!-- errors -->
     <string name="ym_error_something_went_wrong">Seems we\'ve had a technical error</string>
     <!--TranslatorComment:-->

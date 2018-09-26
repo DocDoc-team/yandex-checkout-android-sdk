@@ -53,7 +53,9 @@ android {
         buildConfigField "String", "PAYMENT_AUTHORIZATION_HOST", "\"https://money.yandex.ru/api/wallet-auth/v1\""
         buildConfigField "String", "API_V1_HOST", "\"https://money.yandex.ru/api\""
 
-        buildConfigField "String", "APP_METRICA_KEY", "${optionalProperty('metricaKey')}"
+        buildConfigField "String", "APP_METRICA_KEY", "\"no_key\""
+
+        buildConfigField "String", "DOCDOC_OFFER_LINK", "\"https://shop.docdoc.ru/offer\""
 
         vectorDrawables.useSupportLibrary = true
     }

@@ -111,6 +111,15 @@
         <item name="android:letterSpacing" tools:ignore="NewApi">0.01</item>
     </style>
 
+    <style name="ym_Text.Small">
+        <item name="android:textColor">@color/ym_text_primary</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="ym_Text.Small.Link" parent="ym_Text.Small">
+        <item name="android:textColor">@color/ym_button_text_link</item>
+    </style>
+
     <!-- Buttons -->
     <style name="ym_Button">
         <item name="android:gravity">center</item>

@@ -22,8 +22,8 @@
 package ru.yandex.money.android.sdk.impl.metrics
 
 import android.content.Context
-import com.yandex.metrica.YandexMetrica
-import ru.yandex.money.android.sdk.BuildConfig
+//import com.yandex.metrica.YandexMetrica
+//import ru.yandex.money.android.sdk.BuildConfig
 import ru.yandex.money.android.sdk.SdkException
 import ru.yandex.money.android.sdk.UnhandledException
 

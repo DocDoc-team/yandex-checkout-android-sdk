@@ -44,4 +44,10 @@
 
     <color name="ym_switch_thumb">#ffdb4d</color>
     <color name="ym_switch_track">#7fffdb4d</color>
+
+    <!-- docdoc styles -->
+    <!-- название стиля копируем 1-в-1 с оригиналом -->
+    <color name="button_disabled">#4c00b1cd</color>
+    <color name="newColorNormalButtonPressed">#1ab9d0</color>
+    <color name="button">#00b1cb</color>
 </resources>

@@ -211,7 +211,7 @@
             </LinearLayout>
 
             <TextView
-                style="@style/ym_Button.Rounded"
+                style="@style/ym_Button.Rounded.Branded"
                 android:id="@+id/nextButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

@@ -20,34 +20,7 @@
   ~ OTHER DEALINGS IN THE SOFTWARE.
   -->
 
-<resources>
-
-    <!-- Spaces -->
-    <dimen name="ym_space_3xs">2dp</dimen>
-    <dimen name="ym_space_2xs">4dp</dimen>
-    <dimen name="ym_space_xs">8dp</dimen>
-    <dimen name="ym_space_s">12dp</dimen>
-    <dimen name="ym_space_m">16dp</dimen>
-    <dimen name="ym_space_l">20dp</dimen>
-    <dimen name="ym_space_xl">24dp</dimen>
-    <dimen name="ym_space_2xl">32dp</dimen>
-    <dimen name="ym_space_3xl">40dp</dimen>
-    <dimen name="ym_space_4xl">72dp</dimen>
-
-    <!--Screen indents-->
-    <dimen name="ym_screen_indentStart">@dimen/ym_space_m</dimen>
-    <dimen name="ym_screen_indentEnd">@dimen/ym_space_m</dimen>
-    <dimen name="ym_screen_indentBottom">@dimen/ym_space_m</dimen>
-    <dimen name="ym_screen_indentTop">@dimen/ym_space_m</dimen>
-
-    <!-- Min heights -->
-    <dimen name="ym_minHeight_m">56dp</dimen>
-
-    <!--Radii-->
-    <dimen name="ym_radius_s">6dp</dimen>
-    <dimen name="ym_radius_m">8dp</dimen>
-    <dimen name="ym_radius_l">10dp</dimen>
-    <dimen name="ym_radius_xs">4dp</dimen>
-
-
-</resources>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/button_disabled"/>
+    <corners android:radius="@dimen/ym_radius_xs" />
+</shape>

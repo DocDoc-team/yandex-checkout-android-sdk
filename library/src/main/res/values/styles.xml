@@ -135,6 +135,11 @@
         <item name="android:textColor">@color/ym_btn_primary</item>
     </style>
 
+    <style name="ym_Button.Rounded.Branded">
+        <item name="android:background">@drawable/ym_btn_branded_rounded</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
     <style name="ym_FlatButton">
         <item name="android:textSize">13sp</item>
         <item name="android:fontFamily" tools:targetApi="jelly_bean">sans-serif</item>

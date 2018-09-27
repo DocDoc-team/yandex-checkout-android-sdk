@@ -12,12 +12,15 @@
 
 ```groovy
 repositories {
-    maven { url 'https://dl.bintray.com/yandex-money/maven' }
+    maven {
+        url "https://jitpack.io"
+    }
 }
 dependencies {
-    implementation 'com.yandex.money:checkout:1.3.0.3'
+    implementation 'com.github.DocDoc-team:yandex-checkout-android-sdk
 }
 ```
+Все возможные версии для подключения можно смотреть на [jitpack.io](https://jitpack.io/#DocDoc-team/yandex-checkout-android-sdk)
 
 ## ProGuard
 Добавьте следующие значения в ваш файл `proguard-rules.pro`

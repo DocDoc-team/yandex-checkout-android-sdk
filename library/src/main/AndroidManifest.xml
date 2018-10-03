@@ -28,7 +28,9 @@
     <application>
         <activity
             android:name=".utils.CheckoutConfirmationActivity"
-            android:theme="@style/ym_Theme"/>
+            android:theme="@style/ym_Theme"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            />
 
         <activity
             android:name=".impl.PendingIntentActivity"

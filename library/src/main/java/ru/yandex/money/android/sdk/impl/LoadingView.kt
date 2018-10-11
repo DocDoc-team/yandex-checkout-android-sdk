@@ -40,7 +40,7 @@ internal class LoadingView : LinearLayout {
     constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
         View.inflate(context, R.layout.ym_view_loading, this)
         orientation = LinearLayout.VERTICAL
-        @ColorInt val color = ContextCompat.getColor(context, R.color.ym_palette_accent)
+        @ColorInt val color = ContextCompat.getColor(context, R.color.accent)
         progressBar.indeterminateDrawable.setColorFilter(color, PorterDuff.Mode.MULTIPLY)
 
         setAttributes(context, attrs, defStyleAttr)

@@ -50,4 +50,5 @@
     <color name="button_disabled">#4c00b1cd</color>
     <color name="newColorNormalButtonPressed">#1ab9d0</color>
     <color name="button">#00b1cb</color>
+    <color name="accent">#fe246c</color>
 </resources>

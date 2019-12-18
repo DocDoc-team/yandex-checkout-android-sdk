@@ -47,8 +47,8 @@
 
     <!-- docdoc styles -->
     <!-- название стиля копируем 1-в-1 с оригиналом -->
+    <color name="button">#FE246C</color>
     <color name="button_disabled">#FFA7C4</color>
     <color name="newColorNormalButtonPressed">#DF286B</color>
-    <color name="button">#FE246C</color>
     <color name="accent">#fe246c</color>
 </resources>

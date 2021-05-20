@@ -55,7 +55,7 @@ android {
 
         buildConfigField "String", "APP_METRICA_KEY", "\"no_key\""
 
-        buildConfigField "String", "DOCDOC_OFFER_LINK", "\"https://shop.docdoc.ru/offer\""
+        buildConfigField "String", "DOCDOC_OFFER_LINK", "\"https://sberhealth.ru/documents/contract.html\""
 
         vectorDrawables.useSupportLibrary = true
     }
